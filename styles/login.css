@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login {
+    flex: 1; /* Faz com que a área de login ocupe o espaço disponível */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 65vh;
+    background: rgb(255, 255, 255);
+}
+
+.card {
+    width: 50%;
+    max-width: 450px;
+    background-color: #cecece;
+    padding: 34px;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo {
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid rgb(65, 156, 72);
+    transition: all linear 190ms;
+    font-size: 0.9em;
+    color: #0c0b00;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.campo::placeholder {
+    color: #33b512;
+}
+
+.campo:focus {
+    border-color: #0c0b00;
+}
+
+.btn {
+    padding: 15px;
+    color: #0c0b00;
+    font-weight: 600;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(65, 156, 72);
+    cursor: pointer;
+    transition: all linear 190ms;
+}
+
+.btn:hover {
+    transform: scale(1.04);
+    background-color: rgb(27, 117, 36);
+    color: white;
+}
+
+p {
+    font-size: 0.9em;
+    color: #0c0b00;
+}
+
+a {
+    font-size: 0.9em;
+    color: rgb(65, 156, 72);
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #0c0b00;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #2C8540;
+    color: white;
+    margin-top: auto; /* Empurra o footer para o final da página */
+    width: 100%;
+}
+ 
