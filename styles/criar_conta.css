@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.home-container {
+    width: 100%;
+    background-color: white;
+    margin: 40px auto;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    overflow-y: auto; /* Permite rolar o conteúdo dentro do container  */
+    max-height: 91vh; /* Limita a altura máxima do container */
+}
+
+.profile-pic-container {
+    margin-bottom: 20px;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgb(65, 156, 72);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.input-container label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.input-container input, .input-container textarea {
+    width: 100%;
+    box-sizing: border-box;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid rgb(65, 156, 72);
+    outline-color: #0c0b00;
+    padding: 5px;
+}
+
+.input-container textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    margin-top: 20px;
+}
+
+a {
+    margin-top: 10px;
+    display: block;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-btn {
+    background-color: #128bb5; 
+    border-color: #0c0b00; 
+    color: white; 
+}
+
+.custom-btn:hover {
+    background-color: #0f5f7a; 
+    border-color: #0c0b00; 
+    color: white; 
+}
+
+.custom-btn-voltar-login {
+    color: #128bb5;
+}
