@@ -1,22 +1,25 @@
 body {
     background-color: rgb(255, 255, 255);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 60vh;
     margin: 0;
 }
 
 .home-container {
     width: 100%;
-    background-color: white;
+    max-width: 580px;
+    background-color: #cecece;
     margin: 40px auto;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    overflow-y: auto; /* Permite rolar o conteúdo dentro do container  */
-    max-height: 91vh; /* Limita a altura máxima do container */
+    overflow-y: auto; /* Permite rolar o conteúdo dentro do container */
+    max-height: 87vh; /* Limita a altura máxima do container */
+    flex: 1; /* Faz o container ocupar o espaço disponível */
 }
 
 .profile-pic-container {
@@ -42,6 +45,19 @@ body {
     text-align: left;
 }
 
+/*
+.campo {
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid rgb(65, 156, 72);
+    color: #0c0b00;
+    transition: all linear 190ms;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    outline: none;
+}
+ */
+
 .input-container input, .input-container textarea {
     width: 100%;
     box-sizing: border-box;
@@ -51,6 +67,12 @@ body {
     border: 2px solid rgb(65, 156, 72);
     outline-color: #0c0b00;
     padding: 5px;
+    transition: all linear 190ms;
+}
+
+.input-container input:focus, .input-container textarea:focus {
+    border-color: black; 
+    outline: none; 
 }
 
 .input-container textarea {
@@ -59,7 +81,15 @@ body {
 }
 
 button {
+    padding: 15px;
+    color: #0c0b00;
+    font-weight: 600;
+    border: none;
     margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(65, 156, 72);
+    cursor: pointer;
+    transition: all linear 190ms;
 }
 
 a {
@@ -73,17 +103,28 @@ a {
 }
 
 .custom-btn {
-    background-color: #128bb5; 
+    background-color: rgb(65, 156, 72); 
     border-color: #0c0b00; 
-    color: white; 
 }
 
 .custom-btn:hover {
-    background-color: #0f5f7a; 
-    border-color: #0c0b00; 
-    color: white; 
+    transform: scale(1.04);
+    background-color: rgb(27, 117, 36);
+    color: white;
 }
 
 .custom-btn-voltar-login {
-    color: #128bb5;
+    color: #2C8540;
 }
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #2C8540;
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
