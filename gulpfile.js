@@ -18,7 +18,7 @@ function compilaSass() {
         cascade: false,
       }),
     )
-    .pipe(concat('style.css'))
+    .pipe(concat('listPost.css'))
     .pipe(gulp.dest('styles/'))
     .pipe(browserSync.stream());
 }
