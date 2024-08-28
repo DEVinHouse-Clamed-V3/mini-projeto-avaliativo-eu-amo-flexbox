@@ -17,9 +17,9 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    overflow-y: auto; /* Permite rolar o conteúdo dentro do container */
-    max-height: 87vh; /* Limita a altura máxima do container */
-    flex: 1; /* Faz o container ocupar o espaço disponível */
+    overflow-y: auto; /* permite a rolagem dentro do container */
+    max-height: 87vh; /* limita a altura do container */
+    flex: 1; 
 }
 
 .profile-pic-container {
