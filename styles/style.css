@@ -256,6 +256,10 @@ img {
   margin: 0;
 }
 
+.buttonCustom button{
+    display: none;
+}
+
 .footer-app .qr-codes {
     display: flex; /* Alinha os QR codes lado a lado */
     justify-content: center; /* Centraliza os QR codes horizontalmente */
