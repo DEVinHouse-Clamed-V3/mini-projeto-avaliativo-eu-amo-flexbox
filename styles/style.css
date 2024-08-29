@@ -51,11 +51,14 @@ body {
    justify-content: center;
 }
 
-.menu-hamburguer button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.text-entrar-container a {
+ font-weight: bold;
+}
+
+  .menu-hamburguer button span {
+    display: none;
   }
+
 .menu-hamburguer button img {
   margin-right: 8px;
 }
