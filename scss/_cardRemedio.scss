@@ -1,0 +1,113 @@
+.main-content {
+  padding: 20px;
+
+  .container-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tab-medicines {
+      z-index: -1;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+
+      .medicine-card {
+        display: block;
+        width: 100%;
+        max-width: 230px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        color: inherit;
+        padding: 15px;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        .image {
+          overflow: hidden;
+          border-radius: 4px;
+          text-align: center;
+          background-color: #f5f5f5;
+          padding: 10px;
+
+          img {
+            width: 150px;
+            height: auto;
+            transition: transform 0.3s ease-in;
+          }
+
+          &:hover img {
+            transform: scale(1.05);
+          }
+        }
+
+        .info {
+          margin-top: 15px;
+          text-align: center;
+
+          h3 {
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 8px;
+          }
+
+          .old-price {
+            text-decoration: line-through;
+            font-size: 0.9rem;
+            color: #777;
+          }
+
+          .discount {
+            background-color: #ff4d4f;
+            color: #fff;
+            padding: 2px 6px;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            margin-left: 5px;
+          }
+
+          .new-price {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #28a745;
+            margin-top: 5px;
+          }
+        }
+
+        .promo {
+          background-color: #ffe7ba;
+          color: #d48806;
+          padding: 5px;
+          font-size: 0.8rem;
+          border-radius: 4px;
+          margin-top: 10px;
+        }
+
+        .buy-button {
+          display: block;
+          width: 100%;
+          background-color: #28a745;
+          color: #fff;
+          text-align: center;
+          padding: 10px;
+          font-size: 1rem;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-top: 15px;
+
+          &:hover {
+            background-color: #218838;
+          }
+        }
+      }
+    }
+  }
+}

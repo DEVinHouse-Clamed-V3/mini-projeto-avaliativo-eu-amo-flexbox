@@ -6,40 +6,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/listPost.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
     <!-- Cabeçalho -->
-    <header class="header">
+    <header class="header" data-aos="fade-right">
         <div class="header-container d-flex justify-content-between">
-            <div class="logo">
-                <img src="https://precopopular.vtexassets.com/assets/vtex/assets-builder/precopopular.store-theme/4.0.1/svg/logo-branco-precopopular___ff386e612c97d7a26b61ff943c9177bb.svg"
-                    alt="Farmácia Preço Popular">
-            </div>
-            <div class="d-flex align-items-center flex-grow-1">
-                <div class="dropdown me-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Menu
+            <div class="logoCustom">
+                <img src="https://precopopular.vtexassets.com/assets/vtex/assets-builder/precopopular.store-theme/4.0.1/svg/logo-branco-precopopular___ff386e612c97d7a26b61ff943c9177bb.svg" alt="Farmácia Preço Popular">
+
+                <div class="menu-hamburguer">
+                    <button>
+                        <img src="styles/assets/menu.svg" alt="">
+                        <span>Menu</span>
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Item 1</a></li>
-                        <li><a class="dropdown-item" href="#">Item 2</a></li>
-                        <li><a class="dropdown-item" href="#">Item 3</a></li>
-                        <li><a class="dropdown-item" href="#">Item 4</a></li>
-                        <li><a class="dropdown-item" href="#">Item 5</a></li>
-                    </ul>
-                </div>
-                <div class="search-bar d-flex flex-grow-1 me-3">
-                    <input type="text" class="form-control" placeholder="O que você deseja encontrar?" />
-                    <button type="submit" class="btn btn-light">
-                        <i class="fas fa-search"></i>
-                    </button>
+
                 </div>
             </div>
+
             <div>
                 <div class="text-entrar-container">
                     <a href="./login.html" class="text-entrar">Entrar</a>
@@ -48,59 +38,131 @@
         </div>
     </header>
 
+    <section class="s-banner">
+        <div class="container-custom">
+            <div class="slide-banner">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="banner"><img src="styles/assets/banner1.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner"><img src="styles/assets/banner2.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner"><img src="styles/assets/banner3.png" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner"><img src="styles/assets/banner4.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Conteúdo principal -->
-    <div class="main-content">
-        <!-- Coloque aqui o conteúdo principal da sua página -->
-    </div>
+    <section class="main-content">
+        <div class="container-custom">
+            <div class="tab-medicines" data-aos="fade-right">
+                <a href="#" class="medicine-card">
+                    <div class="image">
+                        <img src="styles/assets/buscofem.png" alt="Buscofem">
+                    </div>
+                    <div class="info">
+                        <h3>Buscofem</h3>
+                        <span class="old-price">R$ 12,90</span>
+                        <span class="discount">23% OFF</span>
+                        <span class="new-price">R$ 9,99</span>
+                        <div class="promo">
+                            <span>Leve 2 unid. ou + por R$ 8,90 cada</span>
+                        </div>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </a>
+                <a href="#" class="medicine-card">
+                    <div class="image">
+                        <img src="styles/assets/buscofem.png" alt="Buscofem">
+                    </div>
+                    <div class="info">
+                        <h3>Buscofem</h3>
+                        <span class="old-price">R$ 12,90</span>
+                        <span class="discount">23% OFF</span>
+                        <span class="new-price">R$ 9,99</span>
+                        <div class="promo">
+                            <span>Leve 2 unid. ou + por R$ 8,90 cada</span>
+                        </div>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </a>
+                <a href="#" class="medicine-card">
+                    <div class="image">
+                        <img src="styles/assets/buscofem.png" alt="Buscofem">
+                    </div>
+                    <div class="info">
+                        <h3>Buscofem</h3>
+                        <span class="old-price">R$ 12,90</span>
+                        <span class="discount">23% OFF</span>
+                        <span class="new-price">R$ 9,99</span>
+                        <div class="promo">
+                            <span>Leve 2 unid. ou + por R$ 8,90 cada</span>
+                        </div>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </a>
+                <a href="#" class="medicine-card">
+                    <div class="image">
+                        <img src="styles/assets/buscofem.png" alt="Buscofem">
+                    </div>
+                    <div class="info">
+                        <h3>Buscofem</h3>
+                        <span class="old-price">R$ 12,90</span>
+                        <span class="discount">23% OFF</span>
+                        <span class="new-price">R$ 9,99</span>
+                        <div class="promo">
+                            <span>Leve 2 unid. ou + por R$ 8,90 cada</span>
+                        </div>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Sidebar para Redes Sociais e Baixar App -->
-    <div class="sidebar">
-        <!--  <div class="footer-social">
-            <h4>Nossas redes sociais</h4>
-            <ul>
-                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="Instagram"></a></li>
-                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2504/2504942.png" alt="TikTok"></a></li>
-            </ul>
-        </div> -->
+    <!-- <div class="sidebar">
         <div class="footer-app">
             <h4>Baixe nosso APP</h4>
             <p>É só apontar a câmera para o QR Code da loja de aplicativos do seu celular!</p>
             <div class="qr-codes">
                 <div class="qr-code-item">
                     <a href="https://play.google.com/store/apps/details?id=com.mobfiq.precopopular&pli=1">
-                        <img class="qr-code"
-                            src="https://precopopular.vtexassets.com/assets/vtex.file-manager-graphql/images/c5d071f2-9441-435c-a2c6-521c527bafb1___52aed02ca7edc7d2e33b5090c9fbb921.png"
-                            alt="QR Code Google Play">
+                        <img class="qr-code" src="https://precopopular.vtexassets.com/assets/vtex.file-manager-graphql/images/c5d071f2-9441-435c-a2c6-521c527bafb1___52aed02ca7edc7d2e33b5090c9fbb921.png" alt="QR Code Google Play">
                     </a>
                     <span class="text-app">Google Play</span>
                 </div>
 
                 <div class="qr-code-item">
                     <a href="https://apps.apple.com/us/app/farm%C3%A1cia-pre%C3%A7o-popular/id1532099930">
-                        <img class="qr-code"
-                            src="https://precopopular.vtexassets.com/assets/vtex.file-manager-graphql/images/313d57d0-9643-41b8-8225-366e5b106938___cbab3d3062d85763d5028185be0c62a0.png"
-                            alt="QR Code Apple Store">
+                        <img class="qr-code" src="https://precopopular.vtexassets.com/assets/vtex.file-manager-graphql/images/313d57d0-9643-41b8-8225-366e5b106938___cbab3d3062d85763d5028185be0c62a0.png" alt="QR Code Apple Store">
                     </a>
                     <span class="text-app">App Store</span>
                 </div>
             </div>
 
-            <!-- Container para banners -->
             <div class="banners">
                 <div class="banner-item">
                     <a href="https://play.google.com/store/apps/details?id=com.mobfiq.precopopular">
-                        <img class="store-banner"
-                            src="https://precopopular.vtexassets.com/assets/vtex/assets-builder/precopopular.store-theme/2.0.4/svg/badge-google-play___b4ed9fd6a8863a58b31057c6c45f250f.svg"
-                            alt="Google Play banner">
+                        <img class="store-banner" src="https://precopopular.vtexassets.com/assets/vtex/assets-builder/precopopular.store-theme/2.0.4/svg/badge-google-play___b4ed9fd6a8863a58b31057c6c45f250f.svg" alt="Google Play banner">
                     </a>
                 </div>
 
                 <div class="banner-item">
                     <a href="https://apps.apple.com/us/app/farm%C3%A1cia-pre%C3%A7o-popular/id1532099930">
-                        <img class="store-banner"
-                            src="https://precopopular.vtexassets.com/assets/vtex/assets-builder/precopopular.store-theme/2.0.4/svg/badge-apple-store___87dca5a151da357519b893ba9499c545.svg"
-                            alt="Apple Store banner">
+                        <img class="store-banner" src="https://precopopular.vtexassets.com/assets/vtex/assets-builder/precopopular.store-theme/2.0.4/svg/badge-apple-store___87dca5a151da357519b893ba9499c545.svg" alt="Apple Store banner">
                     </a>
                 </div>
             </div>
@@ -108,20 +170,9 @@
         <div>
             <img src="https://precopopular.vtexassets.com/assets/vtex.file-manager-graphql/images/99677f65-1fdb-4cf2-ad70-c06996620d37___66d5271aa2d43cf54e0390a9454166cc.png" alt="">
         </div>
-    </div>
-    
+    </div> -->
 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-    <script src="script/contato.js"></script>
-
-
-    <footer>
+    <footer data-aos="fade-up">
         <div class="footer-container">
             <div class="newsletter">
                 <h3>Cadastre-se e receba as novidades</h3>
@@ -173,22 +224,32 @@
                         <li><a href="#">Contato</a></li>
                     </ul>
                 </div>
-                <div >
+                <div>
                     <h4>Nossas redes sociais</h4>
                     <ul class="icones-redes-sociais">
                         <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="Facebook" style="width: 30px; height: 30px;"></a></li>
                         <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="Instagram" style="width: 30px; height: 30px;""></a></li>
-                        <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2504/2504942.png" alt="TikTok" style="width: 30px; height: 30px;"></a></li>
+                        <li><a href=" #"><img src="https://cdn-icons-png.flaticon.com/128/2504/2504942.png" alt="TikTok" style="width: 30px; height: 30px;"></a></li>
                         <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="Linkedin"></a></li>
                     </ul>
                 </div>
             </div>
-           
+
         </div>
         <div class="footer-bottom">
             <p>Farmácia Preço Popular &copy; 2024. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/listPost.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="script/contato.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
-</html> 
+</html>

@@ -32,10 +32,35 @@ body {
     padding-right: 20px; /* Para dar espaço para o botão "Entrar" */
 }
 
-.logo img {
-    height: 30px;
-    padding-right: 20px;
+
+.logoCustom  {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoCustom > img {
+    height: 30px;
+    margin-right: 20px;
+    display: flex;
+}
+
+.menu-hamburguer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.text-entrar-container a {
+ font-weight: bold;
+}
+
+  .menu-hamburguer button span {
+    display: none;
+  }
+
+.menu-hamburguer button img {
+  margin-right: 8px;
 }
 
 .text-entrar {
