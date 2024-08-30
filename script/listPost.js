@@ -14,3 +14,5 @@ var swiper = new Swiper('.mySwiper', {
     prevEl: '.s-banner .container-custom .slide-banner .swiper-button-prev',
   },
 });
+
+const tabMedicines = document.querySelector('.tab-medicines');
