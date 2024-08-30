@@ -55,7 +55,7 @@ body {
  font-weight: bold;
 }
 
-  .menu-hamburguer button span {
+.menu-hamburguer button span {
     display: none;
   }
 
@@ -198,7 +198,7 @@ footer {
 img {
     max-width: none !important;
     max-height: none !important;
-    width: auto; /* permitir que a imagem cresça até o tamanho especificado */
+    width: auto; 
     height: auto;
 }
 
@@ -215,12 +215,11 @@ img {
     margin-top: 20px;
 }
 
-/* Estilos para a side lateral */
+/* estilos para a side lateral */
 .sidebar {
     position: fixed;
-    top: 50%;
     right: 90px;
-    transform: translateY(-10%);
+    transform: translateY(-30%);
     width: 450px; /* define a largura para acomodar as seções lado a lado */
     height: 310px;
     background-color: #e4e6e4;
@@ -271,6 +270,22 @@ img {
     height: auto !important;
 }
 
+.footer-extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* alinha os elementos pelo topo */
+    margin-top: 20px;
+}
+
+.footer-extra > div {
+    flex: 1;
+}
+
+.footer-extra .sidebar {
+    margin-left: 20px; /* espaçamento entre a seção de redes sociais e sidebar */
+    align-self: flex-start; /* garante que a sidebar se alinhe ao topo */
+}
+
 .text-app {
   font-family: Urbanist, sans-serif;
   font-weight: 700;
@@ -296,7 +311,7 @@ img {
   
   .banners {
     display: flex;
-    flex-direction: row; /* alinha os banners verticalmente */
+    flex-direction: row; 
     justify-content: center;
     align-items: center; /* centraliza os banners */
     gap: 40px; /* espaço entre os banners */
