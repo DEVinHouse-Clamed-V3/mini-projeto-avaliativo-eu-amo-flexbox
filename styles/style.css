@@ -29,7 +29,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 20px; /* Para dar espaço para o botão "Entrar" */
+    padding-right: 20px; 
 }
 
 
@@ -74,7 +74,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     flex-grow: 1;
-    margin-left: 20px; /* Espaço extra da barra de pesquisa */
+    margin-left: 20px; 
 }
 
 /* Barra de pesquisa */
@@ -84,7 +84,7 @@ body {
     background-color: white;
     border-radius: 10px;
     padding: 5px 10px;
-    width: 100%; /* Faz com que a barra de pesquisa ocupe o máximo de espaço disponível */
+    width: 100%; /* barra de pesquisa ocupe o máximo de espaço livre */
 }
 
 .search-bar input {
@@ -103,13 +103,13 @@ body {
     color: #2a9c40;
 }
 
-/* Estilos do conteúdo principal */
+/* conteúdo principal */
 .main-content {
     flex: 1;
     width: 100%;
 }
 
-/* Estilos do footer */
+/* footer */
 footer {
     background-color: #f9f9f9;
     color: #333;
@@ -125,7 +125,7 @@ footer {
     flex-wrap: wrap;
 }
   
-/* Conteudo footer*/
+/* conteúdo footer*/
 .newsletter h3 {
     font-size: 1.5em;
     color: #2C8540;
@@ -189,21 +189,21 @@ footer {
   
 
 .footer-app .app-links {
-    display: flex; /* Alinha os itens lado a lado */
-    justify-content: center; /* Centraliza os elementos no contêiner */
-    gap: 30px; /* Espaço entre os blocos de app */
+    display: flex; /* itens lado a lado */
+    justify-content: center; /* centraliza os elementos no conteiner */
+    gap: 30px; /* espaço entre os blocos de app */
     margin-top: 20px;
 }
 
 img {
     max-width: none !important;
     max-height: none !important;
-    width: auto; /* Permite que a imagem cresça até o tamanho especificado */
+    width: auto; /* permitir que a imagem cresça até o tamanho especificado */
     height: auto;
 }
 
 .qr-code {
-    width: 80px !important; /* Aumenta o tamanho do QR code */
+    width: 80px !important;
     height: 80px !important;
  }
   
@@ -221,7 +221,7 @@ img {
     top: 50%;
     right: 90px;
     transform: translateY(-10%);
-    width: 450px; /* Aumentei a largura para acomodar as seções lado a lado */
+    width: 450px; /* define a largura para acomodar as seções lado a lado */
     height: 310px;
     background-color: #e4e6e4;
     border-radius: 8px;
@@ -230,7 +230,7 @@ img {
     z-index: 1000;
     display: flex;
     flex-direction: row;
-    gap: 15px; /* Adiciona espaço entre as duas seções */
+    gap: 15px; 
     align-items: center;
 }
 
@@ -249,7 +249,7 @@ img {
 
 .sidebar .footer-social ul {
     display: flex;
-    justify-content: center; /* Centraliza os ícones de redes sociais */
+    justify-content: center; /* centraliza os ícones de redes sociais */
     gap: 10px;
 }
 
@@ -267,7 +267,7 @@ img {
 }
 
 .store-banner {
-    width: 120px !important; /* Ajusta o tamanho do banner */
+    width: 120px !important; /* ajusta o tamanho do banner */
     height: auto !important;
 }
 
@@ -282,10 +282,10 @@ img {
 }
 
 .footer-app .qr-codes {
-    display: flex; /* Alinha os QR codes lado a lado */
-    justify-content: center; /* Centraliza os QR codes horizontalmente */
-    gap: 20px; /* Espaço entre os QR codes */
-    margin-bottom: 20px; /* Espaço abaixo dos QR codes */
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-bottom: 20px; 
   }
   
   .qr-code-item {
@@ -296,10 +296,10 @@ img {
   
   .banners {
     display: flex;
-    flex-direction: row; /* Alinha os banners verticalmente */
+    flex-direction: row; /* alinha os banners verticalmente */
     justify-content: center;
-    align-items: center; /* Centraliza os banners */
-    gap: 40px; /* Espaço entre os banners */
+    align-items: center; /* centraliza os banners */
+    gap: 40px; /* espaço entre os banners */
   }
 
   .icones-redes-sociais {
@@ -314,7 +314,7 @@ img {
 }
 
 .icones-redes-sociais li {
-    list-style: none; /* Remove os marcadores da lista */
+    list-style: none; /* remove os marcadores da lista */
 }
 
 .icones-redes-sociais li a img {
