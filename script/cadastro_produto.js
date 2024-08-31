@@ -59,3 +59,10 @@ window.onload = function () {
     const formContainer = document.getElementById('form-container');
     formContainer.classList.add('animate-fadeIn');
 }
+
+// preview da imagem
+document.getElementById('imagem').addEventListener('input', function () {
+    const imageUrl = this.value; // Obtém o valor do input
+    const imgProduto = document.getElementById('img-produto');
+    imgProduto.src = imageUrl; // Atualiza o src da imagem com o valor do input
+});
