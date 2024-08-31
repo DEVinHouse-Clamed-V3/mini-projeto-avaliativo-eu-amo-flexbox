@@ -11,10 +11,37 @@
 </head>
 
 <body>
+
+    <!-- Cabeçalho -->
+    <header class="header" data-aos="fade-right">
+        <div class="header-container d-flex justify-content-between">
+            <div class="logoCustom">
+                <img src="https://precopopular.vtexassets.com/assets/vtex/assets-builder/precopopular.store-theme/4.0.1/svg/logo-branco-precopopular___ff386e612c97d7a26b61ff943c9177bb.svg"
+                    alt="Farmácia Preço Popular">
+
+                <div class="menu-hamburguer">
+                    <button>
+                        <img src="styles/assets/menu.svg" alt="">
+                        <span>Menu</span>
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <div class="text-entrar-container">
+                    <a href="./index.html" class="text-entrar">Voltar</a>
+                    <a href="./login.html" class="text-entrar">Entrar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
     <div class="div-container">
 
-        <div class="form-container">
-            <form id="cadastro-form ">
+        <div class="form-container" id="form-container">
+            <form id="cadastro-form">
 
                 <h2>Cadastro de Produtos</h2>
 
@@ -42,6 +69,10 @@
                 <div class="img-container">
                     <p>Pré-visualização</p>
                     <img id="img-produto" src="https://tool.jobassam.in/img/preview.png" alt="">
+                </div>
+
+                <div class="span-div">
+                    <span id="span-result"></span>
                 </div>
 
                 <div class="cadastro-div ">
