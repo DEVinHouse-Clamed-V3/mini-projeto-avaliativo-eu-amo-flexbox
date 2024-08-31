@@ -2,9 +2,13 @@ function adicionarProduto(event) {
     event.preventDefault();
 
     const nome = document.getElementById('nome').value;
-    const preco = document.getElementById('preco').value;
     const descricao = document.getElementById('descricao').value;
     const imagem = document.getElementById('imagem').value;
+
+    let precoInput = document.getElementById('preco').value;
+    precoInput = precoInput.replace(',', '.');
+    const parsePreco = parseFloat(precoInput);
+    const preco = isNaN(parsePreco) ? 0.00 : parsePreco.toFixed(2);
 
     const inputs = [
         { id: 'nome', value: nome },
@@ -27,7 +31,7 @@ function adicionarProduto(event) {
 
 
     if (inputVazio) {
-        document.getElementById('span-result').innerText = "Preencha todos os campos!";
+        document.getElementById('span-result').innerText = "Preencha todos os campos corretamente!";
         document.getElementById('span-result').style = "color: red;";
     } else {
         document.getElementById('span-result').innerText = "Cadastrado com sucesso!";
