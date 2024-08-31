@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto - DevIn[Clamed] </title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/cadastro_produto.css">
+</head>
+
+<body>
+    <div class="div-container">
+
+        <div class="form-container">
+            <form id="cadastro-form ">
+
+                <h2>Cadastro de Produtos</h2>
+
+                <div class="cadastro-div ">
+                    <label for="nome">Nome</label>
+                    <input id="nome" placeholder="Digite o nome do produto" class="cadastro-placeholder" />
+                </div>
+
+                <div class="cadastro-div ">
+                    <label for="preco">Preço</label>
+                    <input id="preco" placeholder="Digite o preço" class="cadastro-placeholder" />
+                </div>
+
+                <div class="cadastro-div">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" placeholder="Digite a descrição do produto"
+                        class="cadastro-placeholder"></textarea>
+                </div>
+
+                <div class="cadastro-div ">
+                    <label for="imagem">Imagem</label>
+                    <input type="url" id="imagem" placeholder="Insira o link da imagem" class="cadastro-placeholder" />
+                </div>
+
+                <div class="img-container">
+                    <p>Pré-visualização</p>
+                    <img id="img-produto" src="https://tool.jobassam.in/img/preview.png" alt="">
+                </div>
+
+                <div class="cadastro-div ">
+                    <button class="btn-submit" id="btn-cadastro" type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>Farmácia Preço Popular &copy; 2024. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./script/cadastro_produto.js"></script>
+</body>
+
+</html>
