@@ -92,3 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderizarProdutos();
   }, 2000);
 });
+
+
+
+
