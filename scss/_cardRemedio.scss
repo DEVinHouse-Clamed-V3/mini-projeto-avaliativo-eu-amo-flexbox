@@ -1,4 +1,8 @@
 .main-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
 
   .container-custom {
@@ -8,6 +12,8 @@
 
     .tab-medicines {
       display: grid;
+      align-items: center;
+      justify-content: center;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
 

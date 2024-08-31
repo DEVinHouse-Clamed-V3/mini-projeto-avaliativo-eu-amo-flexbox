@@ -16,56 +16,57 @@ var swiper = new Swiper('.mySwiper', {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const tabMedicines = document.querySelector('.tab-medicines');
+  function renderizarProdutos() {
+    const tabMedicines = document.querySelector('.tab-medicines');
 
-  // suposta lista de medicamentos
-  const medicine = [
-    {
-      href: '#',
-      imageSrc: 'styles/assets/buscofem.png',
-      altText: 'Buscofem',
-      name: 'Buscofem',
-      oldPrice: 'R$ 12,90',
-      discount: '23% OFF',
-      newPrice: 'R$ 9,99',
-      promoText: 'Leve 2 unid. ou + por R$ 8,90 cada',
-    },
-    {
-      href: '#',
-      imageSrc: 'styles/assets/buscofem.png',
-      altText: 'Buscofem',
-      name: 'Buscofem',
-      oldPrice: 'R$ 12,90',
-      discount: '23% OFF',
-      newPrice: 'R$ 9,99',
-      promoText: 'Leve 2 unid. ou + por R$ 8,90 cada',
-    },
-    {
-      href: '#',
-      imageSrc: 'styles/assets/buscofem.png',
-      altText: 'Buscofem',
-      name: 'Buscofem',
-      oldPrice: 'R$ 12,90',
-      discount: '23% OFF',
-      newPrice: 'R$ 9,99',
-      promoText: 'Leve 2 unid. ou + por R$ 8,90 cada',
-    },
-    {
-      href: '#',
-      imageSrc: 'styles/assets/buscofem.png',
-      altText: 'Buscofem',
-      name: 'Buscofem',
-      oldPrice: 'R$ 12,90',
-      discount: '23% OFF',
-      newPrice: 'R$ 9,99',
-      promoText: 'Leve 2 unid. ou + por R$ 8,90 cada',
-    },
-  ];
+    // suposta lista de medicamentos
+    const medicine = [
+      {
+        href: '#',
+        imageSrc: 'styles/assets/buscofem.png',
+        altText: 'Buscofem',
+        name: 'Buscofem',
+        oldPrice: 'R$ 12,90',
+        discount: '23% OFF',
+        newPrice: 'R$ 9,99',
+        promoText: 'Leve 2 unid. ou + por R$ 8,90 cada',
+      },
+      {
+        href: '#',
+        imageSrc: 'styles/assets/buscofem.png',
+        altText: 'Buscofem',
+        name: 'Buscofem',
+        oldPrice: 'R$ 12,90',
+        discount: '23% OFF',
+        newPrice: 'R$ 9,99',
+        promoText: 'Leve 2 unid. ou + por R$ 8,90 cada',
+      },
+      {
+        href: '#',
+        imageSrc: 'styles/assets/buscofem.png',
+        altText: 'Buscofem',
+        name: 'Buscofem',
+        oldPrice: 'R$ 12,90',
+        discount: '23% OFF',
+        newPrice: 'R$ 9,99',
+        promoText: 'Leve 2 unid. ou + por R$ 8,90 cada',
+      },
+      {
+        href: '#',
+        imageSrc: 'styles/assets/buscofem.png',
+        altText: 'Buscofem',
+        name: 'Buscofem',
+        oldPrice: 'R$ 12,90',
+        discount: '23% OFF',
+        newPrice: 'R$ 9,99',
+        promoText: 'Leve 2 unid. ou + por R$ 8,90 cada',
+      },
+    ];
 
-  let medicineHTML = '';
+    let medicineHTML = '';
 
-  medicine.forEach((medicine) => {
-    medicineHTML += `
+    medicine.forEach((medicine) => {
+      medicineHTML += `
                     <a href="${medicine.href}" class="medicine-card">
                       <div class="image">
                           <img src="${medicine.imageSrc}" alt="${medicine.altText}">
@@ -82,7 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
                       </div>
                     </a>
                     `;
-  });
+    });
 
-  tabMedicines.innerHTML = medicineHTML;
+    tabMedicines.innerHTML = medicineHTML;
+  }
+
+  window.setTimeout(() => {
+    renderizarProdutos();
+  }, 2000);
 });
