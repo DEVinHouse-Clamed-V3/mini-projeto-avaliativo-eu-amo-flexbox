@@ -14,6 +14,7 @@ function login(event) {
         // Redireciona para a tela de post
         alert('Login realizado com sucesso!');
         window.location.href = 'index.html';
+        window.localStorage.setItem('logado', true); // Armazena que o usuário está logado
     } else {
         // Mensagem de erro
         alert('Usuário não encontrado');
