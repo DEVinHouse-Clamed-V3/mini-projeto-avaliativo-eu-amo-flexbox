@@ -4,6 +4,7 @@ function login(event) {
 
     const email = document.querySelector('.form-login input[type="email"]').value;
     const senha = document.querySelector('.form-login input[type="password"]').value;
+    const checkbox = document.querySelector('#manter-conectado');
 
     let listaNoLocalStorage = JSON.parse(localStorage.getItem("contas")); // Pega a lista do localStorage
     if (listaNoLocalStorage === null) listaNoLocalStorage = [];
@@ -11,6 +12,8 @@ function login(event) {
     const contaEncontrada = listaNoLocalStorage.find(conta => conta.email === email && conta.senha === senha);
 
     if (contaEncontrada) {
+        window.localStorage.setItem('checkbox', checkbox.checked);
+
         // Redireciona para a tela de post
         alert('Login realizado com sucesso!');
         window.location.href = 'index.html';
@@ -35,4 +38,15 @@ passwordInput.addEventListener('paste', (event) => {
 
     // Duplica o número de caracteres colados
     passwordInput.value += pasteData.repeat(2);
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const checkbox = document.querySelector('#manter-conectado');
+    const marcadoConectadoSempre = JSON.parse(window.localStorage.getItem('checkbox'));
+
+    if (marcadoConectadoSempre) {
+        checkbox.checked = true;
+        // Redireciona para a página desejada se o checkbox estiver marcado
+        window.location.href = 'index.html';
+    }
 });
