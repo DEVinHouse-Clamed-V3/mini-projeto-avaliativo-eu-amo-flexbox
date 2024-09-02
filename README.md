@@ -10,6 +10,7 @@ Bem-vindo ao repositório do **mini-projeto Farmácia Preço Popular!** Este pro
 - 🔗 Integração de Redes Sociais: Links para as redes sociais da farmácia para facilitar a conexão com os clientes.
 
 # 🗂️ Estrutura do Projeto
+```
 📦 mini-projeto-avaliativo-farmacia
 ├── 📁 script/                # Scripts JavaScript para interatividade e validação de formulários
 ├── 📁 scss/                  # Arquivos SCSS para estilização avançada
@@ -22,13 +23,14 @@ Bem-vindo ao repositório do **mini-projeto Farmácia Preço Popular!** Este pro
 ├── 📄 login.html             # Página de login
 ├── 📄 README.md              # Documentação do projeto
 └── 📄 package.json           # Gerenciamento de dependências e scripts do projeto
+```
 
 # 🛠️ Tecnologias Utilizadas
-🌐 HTML5 e CSS3: Para a estrutura e estilização das páginas.
-⚙️ JavaScript: Para adicionar interatividade e validações dinâmicas.
-🎨 SCSS: Pré-processador CSS para uma escrita mais eficiente e organizada dos estilos.
-🔧 Gulp: Ferramenta para automação de tarefas de desenvolvimento.
-🔄 GitHub: Controle de versão e colaboração.
+- 🌐 HTML5 e CSS3: Para a estrutura e estilização das páginas.
+- ⚙️ JavaScript: Para adicionar interatividade e validações dinâmicas.
+- 🎨 SCSS: Pré-processador CSS para uma escrita mais eficiente e organizada dos estilos.
+- 🔧 Gulp: Ferramenta para automação de tarefas de desenvolvimento.
+- 🔄 GitHub: Controle de versão e colaboração.
 
 # 👥 Contribuindo
-Contribuições dos quatros colegas! 🎉 
+- Contribuições dos quatros colegas! 🎉 
