@@ -46,6 +46,7 @@ h2 {
     color: #0c0b00;
     margin-bottom: 8px;
     outline: none;
+    resize: vertical;
 }
 
 ::placeholder {
