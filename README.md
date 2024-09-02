@@ -2,12 +2,12 @@
 
 Bem-vindo ao repositório do **mini-projeto Farmácia Preço Popular!** Este projeto simula uma loja online de farmácia, onde os usuários podem cadastrar e visualizar produtos com ofertas, além de acessar outras funcionalidades essenciais para um e-commerce.
 
-🚀 Funcionalidades
-📦 Cadastro de Produtos: Adicione novos produtos com detalhes como nome, preço, descrição e imagem.
-🛍️ Listagem de Produtos: Exiba os produtos cadastrados em um layout de cards com informações detalhadas.
-📝 Formulário de Cadastro: Coleta dados como nome, e-mail e telefone dos usuários para envio de novidades.
-📱 Responsividade: Layout adaptado para diferentes dispositivos, garantindo uma experiência de uso fluida.
-🔗 Integração de Redes Sociais: Links para as redes sociais da farmácia para facilitar a conexão com os clientes.
+- 🚀 Funcionalidades
+- 📦 Cadastro de Produtos: Adicione novos produtos com detalhes como nome, preço, descrição e imagem.
+- 🛍️ Listagem de Produtos: Exiba os produtos cadastrados em um layout de cards com informações detalhadas.
+- 📝 Formulário de Cadastro: Coleta dados como nome, e-mail e telefone dos usuários para envio de novidades.
+- 📱 Responsividade: Layout adaptado para diferentes dispositivos, garantindo uma experiência de uso fluida.
+- 🔗 Integração de Redes Sociais: Links para as redes sociais da farmácia para facilitar a conexão com os clientes.
 
 # 🗂️ Estrutura do Projeto
 📦 mini-projeto-avaliativo-farmacia
