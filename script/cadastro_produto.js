@@ -56,11 +56,8 @@ document.getElementById('cadastro-form').addEventListener('submit', adicionarPro
 
 // animação
 window.onload = function () {
-    let contasLocalStorage = JSON.parse(localStorage.getItem('contas')) || [];
     const formContainer = document.getElementById('form-container');
     formContainer.classList.add('animate-fadeIn');
-
-    document.getElementById('entrar').innerText = `Usuário: ${contasLocalStorage[0].nome}`
 }
 
 // preview da imagem
