@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
           <div class="info">
             <h3>${medicine.nome}</h3>
-            <span class="old-price">R$ ${(preco - preco * 0.25).toFixed(2)}</span>
+            <span class="old-price">R$ ${preco.toFixed(2)}</span>
             <span class="discount">${(0.25 * 100)}% OFF</span>
-            <span class="new-price">R$ ${preco.toFixed(2)}</span>
+            <span class="new-price">R$ ${(preco - preco * 0.25).toFixed(2)}</span>
             <div class="promo">
-              <span>Leve 2 unid. ou + por R$ 8,90 cada</span>
+              <span>Leve 2 unid. ou + por R$ ${(preco - preco * 0.25).toFixed(2)} cada</span>
             </div>
             <button class="buy-button">Comprar</button>
           </div>
